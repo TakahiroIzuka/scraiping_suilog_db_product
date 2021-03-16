@@ -51,7 +51,7 @@ class Tabelog:
                 # INパラメータまでのページ数データを取得する
                 # 現在のページが指定した枚数以上の時->break
                 if page_num >= end_page:
-                    print('2')
+                    print('指定ページを超えたので終了')
                     break
 
                 #ページを1つ進める
@@ -198,7 +198,7 @@ class Tabelog:
 
         # データベースに挿入
         self.insert_db()
-        print('10')
+        print('データ取得')
         return
 
         """
